@@ -47,7 +47,7 @@ Returns a random inspirational quote from a curated collection.
 
 1. **Download the server:**
    ```bash
-   curl -O https://raw.githubusercontent.com/YOUR_USERNAME/powershell-mcp-server/main/mcp_server_stdio.ps1
+   curl -O https://raw.githubusercontent.com/jrydval/MCP-Sample-Server-in-PowerShell/refs/heads/main/mcp_test_client.ps1
    ```
 
 2. **Configure Claude Desktop:**
@@ -69,7 +69,7 @@ Returns a random inspirational quote from a curated collection.
 ## Files
 
 - `mcp_server_stdio.ps1` - Main MCP server implementation
-- `claude_desktop_config.json` - Example Claude Desktop configuration
+- `claude_desktop_config.json.sample` - Example Claude Desktop configuration
 
 ## Requirements
 
@@ -100,21 +100,10 @@ echo '{"jsonrpc":"2.0","id":4,"method":"tools/call","params":{"name":"random_quo
 
 ## Debugging
 
-### Server Logs
-```bash
-# Watch logs in real-time
-tail -f /tmp/mcp_server.log
-
-# Or check stderr when running manually
-pwsh -File mcp_server_stdio.ps1
-```
-
 ### Claude Desktop Logs
 ```bash
 # On macOS
 tail -f ~/Library/Logs/Claude\ Desktop/mcp-server-powershell-mcp.log
-
-# Or use Console.app and filter by "Claude"
 ```
 
 ### Troubleshooting
@@ -132,14 +121,6 @@ tail -f ~/Library/Logs/Claude\ Desktop/mcp-server-powershell-mcp.log
 3. **Permission errors:**
    - Ensure PowerShell execution policy allows scripts
    - Check file paths in configuration
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## License
 
@@ -159,7 +140,3 @@ If you encounter issues:
 2. Verify PowerShell version: `pwsh --version`
 3. Test the server manually using the testing commands above
 4. Open an issue in this repository
-
----
-
-Made with ❤️ for the Claude Desktop community
