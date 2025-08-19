@@ -103,7 +103,7 @@ echo '{"jsonrpc":"2.0","id":4,"method":"tools/call","params":{"name":"random_quo
 ### Claude Desktop Logs
 ```bash
 # On macOS
-tail -f ~/Library/Logs/Claude\ Desktop/mcp-server-powershell-mcp.log
+tail -f ~/Library/Logs/Claude/mcp-server-powershell-mcp.log
 ```
 
 ### Troubleshooting
@@ -136,7 +136,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter issues:
 
-1. Check Claude Desktop logs: `~/Library/Logs/Claude Desktop/main.log`
+1. Check Claude Desktop logs: `~/Library/Logs/Claude/mcp-server-powershell-mcp.log` and `~/Library/Logs/Claude/main.log`
 2. Verify PowerShell version: `pwsh --version`
 3. Test the server manually using the testing commands above
 4. Open an issue in this repository
