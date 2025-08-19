@@ -1,0 +1,11 @@
+{
+  "globalShortcut": "Shift+Space",
+
+  "mcpServers": {
+    "powershell-mcp": {
+      "command": "pwsh",
+      "args": ["-File", "/path/to/file/mcp_server_stdio.ps1"],
+      "env": {}
+    }
+  }
+}
